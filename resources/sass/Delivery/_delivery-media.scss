@@ -1,0 +1,38 @@
+@import "../vars";
+
+@media only screen and (max-width : 1200px) {
+	.container { width: 90%; }
+
+	.delivery-catalog__sort, .catalog__menu { display: none !important; }
+
+	.catalog__items {
+		justify-content: space-between !important;
+		display: flex !important;
+        width: 100% !important;
+
+		.catalog__item {
+            height: 427px;
+            width: 49%;
+		}
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.delivery-pop-up {
+	    .delivery-pop-up__inner {
+	        width: 90%;
+
+	        .delivery-pop-up__carousel { .delivery-pop-up__carousel-slide { height: 200px; } }
+	        .delivery-pop-up__inner-text-heading { h3 { font-size: 27px; } }
+	        .delivery-pop-up__inner-wrap { padding: 20px 10px; }
+	    }
+	}
+
+	.delivery-offer {
+		.offer__slide-inner-heading h1 { font-size: 30px !important; line-height: 40px !important; }
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.delivery-gallery { padding: $section_responsive_padding 0 $section_padding 0 !important; }
+}

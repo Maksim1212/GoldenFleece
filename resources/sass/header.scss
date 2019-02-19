@@ -1,0 +1,19 @@
+@import "vars";
+@import "mixins";
+
+/* Header Section */
+
+.header {
+    padding: 17px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    background: #fff;
+    z-index: 999;
+
+    & * { cursor: default; }
+
+    .header__list { li { margin-right: 10px; } }
+}
+
+@media only screen and (max-width : 1200px) { .header { display: none; } }

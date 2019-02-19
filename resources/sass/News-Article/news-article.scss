@@ -1,0 +1,46 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/navbar.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+.news-article-offer__cover { height: 520px; }
+
+.news-article {
+    padding: $section_padding 0 50px 0;
+    @include article_heading();
+}
+
+.news-article-news {
+    padding: $section_padding 0;
+    @include block_heading();
+}
+
+.news-article-news__news {
+    @include news_items();
+
+    .news__item { margin-bottom: 25px !important; }
+
+    .news-article-news__news-load-more {
+        padding: 50px 0 0 0;
+        
+        a {
+            @include nav_button();
+            text-decoration: none;
+        }
+    }
+}
+
+@import "news-article-media";

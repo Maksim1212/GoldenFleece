@@ -1,0 +1,195 @@
+@import "../vars";
+
+@media only screen and (max-width : 1200px) {
+    .container { width: 90%; }
+
+    .about {
+        .about__items {
+            .about__item {
+                padding: 30px 10px;
+                margin-bottom: 60px;
+
+                &:last-child { margin: 0 auto; }
+            }
+        }
+    }
+
+    .news {
+        .news__items {
+            .news__item { &:last-child { display: none; } }
+        }
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .about-info {
+        padding: 100px 0;
+
+        .about-info__inner {
+            width: 420px;
+
+            h3 {
+                line-height: 40px;
+                font-size: 26px;
+            }
+
+            p {
+                line-height: 27px;
+                font-size: 15px;
+            }
+
+            a { font-size: 14px; }
+        }
+    }
+
+    .news {
+        padding: $section_padding 0;
+
+        .news__items {
+            padding-top: 50px;
+
+            .news__item { margin-bottom: 50px; }
+        }
+    }
+}
+
+@media only screen and (max-width : 933px) {
+    .news {
+        .news__items {
+            .news__item { &:nth-child(3) { margin: 0 auto; } }
+        }
+    }
+}
+
+@media only screen and (max-width : 880px) {
+    .about-info { .about-info__inner { width: 340px; } }
+
+    .about {
+        .about__items {
+            display: block;
+            padding-top: 50px;
+
+            .about__item {
+                margin: 0 auto 60px auto;
+
+                .about__item-text { p { width: 100%; } }
+            }
+        }
+    }
+
+    .feedback { padding: $section_responsive_padding + 40 0; }
+}
+
+@media only screen and (max-width : 768px) {
+    .about {
+        .about__items {
+            .about__item { margin: 0 auto 40px auto; }
+        }
+    }
+
+    .about-info {
+        padding: 200px 0;
+
+        .about-info__inner {
+            width: 350px;
+
+            h3 {
+                line-height: 31px;
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 23px;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            a { font-size: 13px; }
+        }
+    }
+
+    .feedback {
+        .feedback__inner {
+            .feedback__inner-block {
+                line-height: 31px;
+                font-size: 22px;
+            }
+
+            .feedback__formset {
+                padding-top: 30px;
+
+                input {
+                    padding: 15px 30px 15px 35px;
+                    width: 100%;
+                    font-size: 14px;
+                }
+
+                button {
+                    padding: 0 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 650px) {
+    .news {
+        .news__items {
+            justify-content: center;
+            flex-direction: column;
+
+            .news__item {
+                width: 90%;
+                margin: 0 auto 40px auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .about-info {
+        padding: 100px 0;
+
+        .about-info__inner {
+            width: 100%;
+            background: rgba(255, 255, 255, .7);
+            padding: 10px 10px 20px 10px;
+
+            h3 {
+                line-height: 31px;
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 23px;
+                font-size: 15px;
+                margin-bottom: 20px;
+                color: $text;
+            }
+
+            a { font-size: 13px; }
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .feedback {
+        .feedback__inner {
+            .feedback__formset {
+                padding-top: 40px;
+
+                input { padding: 10px 10px 10px 15px; }
+            }
+        }
+    }
+
+    .about { padding: $section_responsive_padding 0; }
+    .news { 
+        padding: $section_responsive_padding 0; 
+
+        .news__items { padding-top: 20px; }
+    }
+}

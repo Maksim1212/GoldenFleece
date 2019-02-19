@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Отель</title>
+    <meta name="author" content="Zaviryukha Igor">
+    <meta name="description" content="Web site">
+    <meta name="keywords" content="web, site">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/Hotel/hotel.css">
+</head>
+<body>
+    <header id="header" class="header fixed">
+        <div class="container">
+            <div class="header__wrapper d-flex justify-content-between align-items-center">
+                <ul class="header__list d-flex justify-content-between align-items-center">
+                    <li>
+                        Служба доставки: (048) 42-22-42,
+                    </li>
+                    <li>
+                        (068) 55-88-376,
+                    </li>
+                    <li>
+                        (063) 35-13-420,
+                    </li>
+                    <li>
+                        (048) 784-57-02
+                    </li>
+                </ul>
+                <div>
+                    Ресторан: (048) 718-38-80
+                </div>
+                <div>
+                    Отель: (048) 712-74-90
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="nav" class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <ul class="nav__list d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="restaurant.html" class="upper">Ресторан</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Отель</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Меню</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Служба доставки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../../img/logo.png" alt="Золотое Руно" title="Золотое Руно">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="upper">Перейти на сайт ресторана</a>
+                    </li>
+                </ul>
+                <div class="nav__menu-mobile d-none relative">
+                    <div class="nav__menu-mobile-inner d-flex justify-content-center align-items-center">
+                        <div class="nav__menu-mobile-burger absolute" id="burger_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="nav__menu-logo">
+                            <img src="../../../img/logo.png" alt="Золотое Руно" title="Золотое Руно" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="nav__menu-mobile-wrap">
+                        <ul class="nav__menu-mobile-menu text-center" id="menu_mobile">
+                            <li>
+                                <a href="restaurant.html" class="upper">Ресторан</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Отель</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Меню</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Служба доставки</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="upper">Перейти на сайт ресторана</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotel_desc" class="hotel-desc">
+        <div class="container">
+            <div class="article-heading">
+                <div class="article-heading__heading text-center">
+                    <h2>Отель</h2>
+                </div>
+                <div class="article-heading__text">
+                    <p>
+                        Отель «Золотое Руно» расположен в центре жил массива Таирово.
+                        Мы предлагаем отдохнуть, насладиться красотой Черного моря и посетить
+                        незабываемые городские достопримечательности.
+                    </p>
+                    <p>
+                        В отеле гостей тепло и дружелюбно встретят, обеспечат
+                        комфортными номерами и профессиональным обслуживанием.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reserve_hotel" class="reserve-hotel relative" style="background: url('img/Hotel/e0e9e2e0e7eee2f1eae8e95f33331.jpg') no-repeat center top / cover;">
+        <div class="container">
+            <div class="reserve-hotel__wrapper d-flex justify-content-center">
+                <div class="reserve-hotel__inner absolute">
+                    <div class="reserve-hotel__inner-heading text-center">
+                        <h2>Забронировать номер онлайн</h2>
+                    </div>
+                    <form action="" method="POST">
+                        <div class="reserve-hotel__inner-row d-flex justify-content-between">
+                            <div class="reserve-hotel__inner-block">
+                                <label for="start_date" class="d-block">Дата заезда:</label>
+                                <input type="date" id="start_date" name="start-date" value="2018-01-01" class="reserve-hotel__date-input">
+                            </div>
+                            <div class="reserve-hotel__inner-block relative">
+                                <label for="finish_date" class="d-block">Дата выезда:</label>
+                                <input type="date" id="finish_date" name="finish-date" value="2018-01-01" class="reserve-hotel__date-input">
+                            </div>
+                            <div class="reserve-hotel__inner-block">
+                                <label for="hotel_type" class="d-block">Тип номера:</label>
+                                <select name="hotel_type_select" id="hotel_type">
+                                    <option value="vip-1">VIP-1</option>
+                                    <option value="vip-2">VIP-2</option>
+                                    <option value="vip-3">VIP-3</option>
+                                    <option value="vip-4">VIP-4</option>
+                                    <option value="president">Президентский люкс</option>
+                                </select>
+                            </div>
+                            <div class="reserve-hotel__inner-block">
+                                <label class="d-block">Количество гостей:</label>
+                                <div class="reserve-hotel__inner-person-counter d-flex justify-content-between align-items-center">
+                                    <div class="reserve-hotel__inner-decrease d-flex justify-content-center align-items-center">
+                                        <span id="decrease" class="reserve-hotel__inner-counter-control">-</span>
+                                    </div>
+                                    <div class="reserve-hotel__inner-persons d-flex justify-content-center align-items-center">
+                                        <div>
+                                            <span id="persons">0</span>
+                                            <span><i class="fa fa-male"></i></span>
+                                            <input type="hidden" name="persons" value="0" id="persons_counter_input_hidden">
+                                        </div>
+                                    </div>
+                                    <div class="reserve-hotel__inner-increase d-flex justify-content-center align-items-center">
+                                        <span id="increase" class="reserve-hotel__inner-counter-control">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reserve-hotel__inner-row d-flex justify-content-between">
+                            <div class="reserve-hotel__inner-block">
+                                <input type="text" name="name_surname" class="reserve-hotel__input" placeholder="Имя, Фамилия">
+                            </div>
+                            <div class="reserve-hotel__inner-block">
+                                <input type="phone" name="phone" class="reserve-hotel__input" placeholder="Номер телефона*">
+                            </div>
+                            <div class="reserve-hotel__inner-block">
+                                <button type="submit" name="take_hotel">Заказать</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="reserve-hotel__inner-footer text-center">
+                        <span>*-Обязательные для заполнения поля</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotel_types" class="hotel-types">
+        <div class="hotel-types__wrapper">
+            <div class="block-heading text-center">
+                <div class="container">
+                    <h2>Типы номеров</h2>
+                    <div class="block-heading__decor d-flex justify-content-center">
+                        <img src="img/Main/decor.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="carousel__item" style="background: url('img/Hotel/Slider/1267_room-type.jpg') no-repeat center top / cover;">
+                    <div class="carousel__item-inner justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h3>VIP-1</h3>
+                            <span class="hotel__carousel-undertitle">Цена в сутки: <b>1200.95 грн.</b></span>
+                        </div>
+                    </div>
+                    <div class="carousel__item-inner-hover justify-content-center align-items-center">
+                        <div class="text-center carousel__item-inner-block">
+                            <h3>VIP-1</h3>
+                            <div class="hotel__carousel-undertitle hotel__carousel-undertitle-hover">
+                                Цена в сутки: <b>1200.95 грн.</b><br>
+                                Осталось номеров: 9
+                            </div>
+                            <a href="#reserve_hotel" class="go_to upper">Заказать</a>
+                            <a href="#" class="upper">Смотреть фото</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__item" style="background: url('img/Hotel/Slider/29020120.jpg') no-repeat center top / cover;">
+                    <div class="carousel__item-inner justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h3>VIP-2</h3>
+                            <span class="hotel__carousel-undertitle">Цена в сутки: <b>500.95 грн.</b></span>
+                        </div>
+                    </div>
+                    <div class="carousel__item-inner-hover justify-content-center align-items-center">
+                        <div class="text-center carousel__item-inner-block">
+                            <h3>VIP-2</h3>
+                            <div class="hotel__carousel-undertitle hotel__carousel-undertitle-hover">
+                                Цена в сутки: <b>500.95 грн.</b><br>
+                                Осталось номеров: 14
+                            </div>
+                            <a href="#reserve_hotel" class="go_to upper">Заказать</a>
+                            <a href="#" class="upper">Смотреть фото</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__item" style="background: url('img/Hotel/Slider/3300284209.jpg') no-repeat center top / cover;">
+                    <div class="carousel__item-inner justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h3>VIP-3</h3>
+                            <span class="hotel__carousel-undertitle">Цена в сутки: <b>0.99 грн.</b></span>
+                        </div>
+                    </div>
+                    <div class="carousel__item-inner-hover justify-content-center align-items-center">
+                        <div class="text-center carousel__item-inner-block">
+                            <h3>VIP-3</h3>
+                            <div class="hotel__carousel-undertitle hotel__carousel-undertitle-hover">
+                                Цена в сутки: <b>500.95 грн.</b><br>
+                                Осталось номеров: 27
+                            </div>
+                            <a href="#reserve_hotel" class="go_to upper">Заказать</a>
+                            <a href="#" class="upper">Смотреть фото</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__item" style="background: url('img/Hotel/Slider/kempinski_hotel_soma_bay-8_70.jpg') no-repeat center top / cover;">
+                    <div class="carousel__item-inner justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h3>VIP-4</h3>
+                            <span class="hotel__carousel-undertitle">Цена в сутки: <b>1200.95 грн.</b></span>
+                        </div>
+                    </div>
+                    <div class="carousel__item-inner-hover justify-content-center align-items-center">
+                        <div class="text-center carousel__item-inner-block">
+                            <h3>VIP-4</h3>
+                            <div class="hotel__carousel-undertitle hotel__carousel-undertitle-hover">
+                                Цена в сутки: <b>1200.95 грн.</b><br>
+                                Осталось номеров: 46
+                            </div>
+                            <a href="#reserve_hotel" class="go_to upper">Заказать</a>
+                            <a href="#" class="upper">Смотреть фото</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__item" style="background: url('img/Hotel/Slider/orig.jpeg') no-repeat center top / cover;">
+                    <div class="carousel__item-inner justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h3>Президентский люкс</h3>
+                            <span class="hotel__carousel-undertitle">Цена в сутки: <b>99999 грн.</b></span>
+                        </div>
+                    </div>
+                    <div class="carousel__item-inner-hover justify-content-center align-items-center">
+                        <div class="text-center carousel__item-inner-block">
+                            <h3>Президентский люкс</h3>
+                            <div class="hotel__carousel-undertitle hotel__carousel-undertitle-hover">
+                                Цена в сутки: <b>99999 грн.</b><br>
+                                Осталось номеров: 4
+                            </div>
+                            <a href="#reserve_hotel" class="go_to upper">Заказать</a>
+                            <a href="#" class="upper">Смотреть фото</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotel-feedback" class="hotel-feedback">
+        <div class="container">
+            <div class="hotel-feedback__wrapper">
+                <div class="hotel-feedback__wrapper-inner">
+                    <div class="block-heading text-center">
+                        <h2>Остались вопросы?</h2>
+                        <h2>Оставь свой номер и мы перезвоним</h2>
+                    </div>
+                    <div class="hotel-feedback__formset">
+                        <form action="" method="POST" class="text-center">
+                            <input class="d-block m-auto" type="text" placeholder="Ваше имя*" name="user_name">
+                            <input class="d-block m-auto" type="phone" placeholder="Ваш номер телефона*" name="phone_number">
+                            <div class="hotel-feedback__buttonset text-center">
+                                <button name="send_question" type="submit" class="upper">Заказать</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hotel-feedback__footer text-center">
+                        *-обязательные для заполнения поля
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__wrapper d-flex justify-content-between flex-wrap">
+                <div class="footer__item">
+                    <ul class="footer__item-list">
+                        <li class="footer__item-list-title">
+                            Наши партнеры:
+                        </li>
+                        <li class="footer__item-list-links">
+                            <a href="#" target="_blank">leogaming.net,</a>
+                            <a href="#" target="_blank">Салон красоты Юлии Никулиной</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__item-list">
+                        <li class="footer__item-list-title">
+                            Следи за нами в соц. сетях:
+                        </li>
+                        <li class="footer__item-list-links footer__socials">
+                            <a href="https://www.facebook.com/zolotoruno" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/zolotoe.runo.od/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCKGW6NWU_4enwck0Cm-fDqQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://www.tripadvisor.ru/Hotel_Review-g295368-d3876917-Reviews-Zolotoye_Runo-Odessa_Odessa_Oblast.html" target="_blank"><i class="fa fa-tripadvisor"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item text-center footer__logo-item">
+                    <div class="footer__item-logo">
+                        <img src="img/footer-logo.png" alt="Золотое Руно">
+                    </div>
+                    <div class="footer__item-address">
+                        <p>г. Одесса,ул. Ак. Королёва, 16</p>
+                    </div>
+                    <div class="footer__item-show-on-map">
+                        <a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D0%BA%D0%B0+%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0,+16,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4125269,30.7166459,17z/data=!3m1!4b1!4m5!3m4!1s0x40c6336ec4085405:0x5a201c1cae9ca8d2!8m2!3d46.4125232!4d30.7188346" target="_blank" class="upper">Показать на карте</a>
+                    </div>
+                </div>
+                <div class="footer__item text-right">
+                    <ul>
+                        <li class="footer__item-phones">
+                            <span class="footer__item-list-title">Ресторан: </span>
+                            <span class="footer__adresses-numbers">(048) 718-38-80</span>
+                        </li>
+                        <li class="footer__item-phones">
+                            <span class="footer__item-list-title">Отель: </span>
+                            <span class="footer__adresses-numbers">(048) 712-74-90</span>
+                        </li>
+                        <li class="footer__item-phones">
+                            <span class="footer__item-list-title">Служба доставки: </span>
+                            <ul>
+                                <li class="footer__adresses-numbers">(048) 42-22-42</li>
+                                <li class="footer__adresses-numbers">(068) 55-88-376</li>
+                                <li class="footer__adresses-numbers">(063) 35-13-420</li>
+                                <li class="footer__adresses-numbers">(048) 784-57-02</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Scripts -->
+<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/Hotel/hotel.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+</html>

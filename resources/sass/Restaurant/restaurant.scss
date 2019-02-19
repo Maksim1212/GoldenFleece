@@ -1,0 +1,37 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/navbar.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+/* Restaurant Desc Section */
+
+.restaurant-desc {
+    padding: $section_padding 0;
+
+    @include article_heading();
+}
+
+/* Restaurant Gallery Section */
+
+.restaurant-gallery {
+    @include block_heading();
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    @include slider();
+}
+
+@import "restaurant-media";

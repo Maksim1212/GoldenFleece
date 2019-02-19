@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) { .container { width: 90%; } }
+
+@media screen and (max-width: 655px) {
+    .news__items {
+        justify-content: center !important;
+        flex-direction: column !important;
+
+        .news__item { width: 100% !important; }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .news-desc {
+        padding: $section_responsive_padding 0;
+    }
+}

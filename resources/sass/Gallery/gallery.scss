@@ -1,0 +1,35 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/navbar.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+.gallery-desc {
+    padding: $section_padding 0;
+    @include portfolio_menu();
+
+    .gallery-desc__images {
+        padding-top: 70px;
+        .gallery-desc__image {
+            width: 280px;
+            height: 380px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @include load_more();
+}
+
+@import "gallery-media";

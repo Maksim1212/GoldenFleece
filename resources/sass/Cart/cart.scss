@@ -1,0 +1,98 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+@import "../../libs/jquery_ui/jquery-ui.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/delivery-navbar.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+.cart-desc {
+	padding: $section_padding 0;
+	@include block_heading();
+
+	.cart-desc__cart {
+		padding-top: 70px;
+		.cart-desc__item {
+			margin-bottom: 20px;
+			width: 770px;
+
+			.cart-desc__item-pic {
+				width: 83px;
+				height: 83px;
+				margin-right: 20px;
+			}
+
+			@include counter();
+
+			.food-count { font-weight: 600; font-size: 30px; padding: 0 10px; }
+
+			.cart-desc__item-text {
+				span { font-family: 'Arial', sans-serif; }
+				b { font-size: 17px; }
+				h3 { font-size: 20px; }
+			}
+
+			.cart-desc__item-counter {
+				.counter__label {
+					font-family: 'Arial', sans-serif;
+					opacity: .55;
+				}
+			}
+
+			.cart-desc__item-price {
+				.cart-desc__item-price-label { opacity: .55; font-family: 'Arial', sans-serif; }
+
+				b { font-size: 25px; }
+			}
+		}
+
+		hr {
+			width: 770px;
+			height: 1px;
+			border: none;
+			background: #333;
+			opacity: .2;
+			margin: 50px auto;
+		}
+	}
+
+	.cart-desc__price {
+		width: 770px;
+		margin: 0 auto;
+	
+		.cart-desc__current-price {
+			.cart-desc__current-price-label {
+				font-family: 'Arial', sans-serif;
+				opacity: .55;
+			}
+
+			span:last-child { b { font-size: 40px; } }
+		}
+
+		.cart-desc__price-next {
+			a {
+				@include nav_button;
+				background: $text;
+				color: #fff;
+				text-decoration: none;
+				padding: 5px 50px;
+				font-weight: 300;
+				font-size: 14px;
+				&:hover { background: darken($text, 10%); }
+			}
+		}
+	}
+}
+
+@import "cart-media";

@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px) {
+    .container { width: 90%; }
+    .contacts-desc { .contacts-desc__contacts { hr { width: 80%; } } }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts-desc { padding: $section_responsive_padding 0; }
+    .contacts-map { #map { height: 400px; } }
+}

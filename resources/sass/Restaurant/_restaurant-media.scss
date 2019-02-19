@@ -1,0 +1,16 @@
+@import "../vars";
+
+@media only screen and (max-width : 1200px) { .container { width: 90%;} }
+
+@media only screen and (max-width : 992px) {
+    .restaurant-gallery {
+        padding-bottom: 20px;
+        .restaurant-gallery__container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) { .restaurant-gallery { padding-top: 30px; } }
+@media screen and (max-width: 480px) { .restaurant-desc { padding: $section_responsive_padding 0; } }

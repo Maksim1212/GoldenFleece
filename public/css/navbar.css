@@ -1,0 +1,130 @@
+/* Navbar button with accent background */
+/* Section block heading */
+/* Section block heading with article */
+/* Hint text */
+/* Slider */
+/* Full Width Slider */
+/* Counter */
+/* Catalog Items */
+/* Catalog Menu */
+/* Catalog Price */
+/* Catalog MObile Menu */
+/* Catalog Items Mobile */
+/* Catalog */
+/* News Items */
+/* Navbar Section */
+.nav {
+  padding: 71px 0 10px 0;
+  font-family: 'Arial', sans-serif;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav .nav__list a {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav .nav__list a:hover {
+  opacity: .65;
+}
+
+.nav .nav__list li:last-child a {
+  background: transparent;
+  padding: 10px;
+  color: #333;
+  border: 1px solid #333;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.nav .nav__list li:last-child a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.nav .nav__list li:last-child a:hover {
+  opacity: 1;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-inner {
+  width: 100%;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-burger {
+  width: 40px;
+  left: 0;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-burger span {
+  display: block;
+  width: 100%;
+  background: #e4be7f;
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-burger span:nth-child(2) {
+  width: 75%;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-burger span:last-child {
+  width: 55%;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-wrap {
+  overflow: hidden;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-menu {
+  padding-top: 30px;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-menu li:last-child a {
+  background: transparent;
+  padding: 10px;
+  color: #333;
+  border: 1px solid #333;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-menu li:last-child a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.nav .nav__menu-mobile .nav__menu-mobile-menu.menu__mobile_open {
+  margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__menu-mobile {
+    display: block;
+  }
+  .nav {
+    padding: 20px 0;
+  }
+  .nav__menu-mobile-menu {
+    margin-top: -380px !important;
+  }
+}

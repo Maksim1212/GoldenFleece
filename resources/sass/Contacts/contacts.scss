@@ -1,0 +1,72 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+@import "../../libs/jquery_ui/jquery-ui.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/delivery-navbar.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+.contacts-desc {
+    padding: $section_padding 0;
+    @include block_heading();
+
+    .contacts-desc__contacts {
+        padding-top: 50px;
+        .contacts-desc__contacts-block-contact {
+            i {
+                font-size: 25px;
+                margin-bottom: 20px;
+                color: $accent;
+            }
+
+            span {
+                font-size: 15px;
+                font-family: 'Arial', sans-serif;
+                margin: 10px 0;
+            }
+        }
+
+        hr {
+            width: 745px;
+            height: 1px;
+            background: $text;
+            opacity: .3;
+            margin: 30px auto;
+            border: none;
+        }
+
+        .contacts-desc__contacts-socials-block {
+            width: 150px;
+            padding-top: 40px;
+
+            i {
+                font-size: 20px;
+                color: $accent;
+            }
+        }
+
+    }
+}
+
+.contacts-map {
+    padding-bottom: $section_padding;
+    #map { height: 600px; }
+}
+
+.contacts-feedback {
+    padding-bottom: 100px;
+    @include feedback();
+}
+
+@import "contacts-media";

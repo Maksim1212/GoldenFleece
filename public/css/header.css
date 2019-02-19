@@ -1,0 +1,37 @@
+/* Navbar button with accent background */
+/* Section block heading */
+/* Section block heading with article */
+/* Hint text */
+/* Slider */
+/* Full Width Slider */
+/* Counter */
+/* Catalog Items */
+/* Catalog Menu */
+/* Catalog Price */
+/* Catalog MObile Menu */
+/* Catalog Items Mobile */
+/* Catalog */
+/* News Items */
+/* Header Section */
+.header {
+  padding: 17px 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  background: #fff;
+  z-index: 999;
+}
+
+.header * {
+  cursor: default;
+}
+
+.header .header__list li {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    display: none;
+  }
+}

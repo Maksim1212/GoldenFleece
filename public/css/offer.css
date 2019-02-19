@@ -1,0 +1,96 @@
+/* Navbar button with accent background */
+/* Section block heading */
+/* Section block heading with article */
+/* Hint text */
+/* Slider */
+/* Full Width Slider */
+/* Counter */
+/* Catalog Items */
+/* Catalog Menu */
+/* Catalog Price */
+/* Catalog MObile Menu */
+/* Catalog Items Mobile */
+/* Catalog */
+/* News Items */
+/* Offer Section */
+.offer .offer__carousel {
+  width: 100%;
+}
+
+.offer .offer__slide {
+  padding: 100px 0 20px 0;
+}
+
+.offer .offer__slide .offer__slide-inner h1 {
+  line-height: 60px;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.offer .offer__slide .offer__slide-inner p {
+  line-height: 33px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fdfdfd;
+  opacity: .9;
+  width: 774px;
+  margin-bottom: 70px;
+}
+
+.offer .offer__slide .offer__slide-inner .offer__slide-button {
+  margin-bottom: 90px;
+}
+
+.offer .offer__slide .offer__slide-inner .offer__slide-button a {
+  color: #fafafa;
+  text-decoration: none;
+  border: 2px solid #fafafa;
+  padding: 10px 20px;
+}
+
+.offer .offer__slide .offer__slide-inner .offer__slide-button a:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.offer .offer__slide .offer__slide-inner .offer__slide-footer a {
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 30px;
+  outline: none;
+}
+
+@media only screen and (max-width: 880px) {
+  .offer .offer__slide .offer__slide-inner h1 {
+    font-size: 40px;
+  }
+  .offer .offer__slide .offer__slide-inner p {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .offer .offer__slide .offer__slide-inner h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .offer .offer__slide {
+    padding: 40px 0 10px 0;
+  }
+  .offer .offer__slide .offer__slide-inner h1 {
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .offer .offer__slide .offer__slide-inner p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .offer .offer__slide .offer__slide-inner .offer__slide-button a {
+    font-size: 13px;
+  }
+}

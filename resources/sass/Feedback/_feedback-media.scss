@@ -1,0 +1,30 @@
+@import "../vars";
+
+@media screen and (max-width: 1200px) {
+    .container { width: 90%; }
+}
+
+@media screen and (max-width: 768px) {
+    .feedback-desc__feedback-inner {
+        flex-direction: column !important;
+
+        .feedback-desc__feedback-rate { padding-top: 40px !important; text-align: center; }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feedback-desc { padding: $section_responsive_padding 0; }
+
+    .feedback-pop-up {
+        .feedback-pop-up__inner { width: 100%; }
+    }
+
+    .feedback-desc__feedback-user-pic {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .feedback-desc__feedback-heading {
+        h3 { font-size: 25px !important; }
+    }
+}

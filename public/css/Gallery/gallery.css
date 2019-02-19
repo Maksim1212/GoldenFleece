@@ -1,0 +1,164 @@
+/* Navbar button with accent background */
+/* Section block heading */
+/* Section block heading with article */
+/* Hint text */
+/* Slider */
+/* Full Width Slider */
+/* Counter */
+/* Catalog Items */
+/* Catalog Menu */
+/* Catalog Price */
+/* Catalog MObile Menu */
+/* Catalog Items Mobile */
+/* Catalog */
+/* News Items */
+@import url(../../libs/normalize/normalize.css);
+@import url(../../libs/slick/slick.css);
+@import url(../../libs/slick/slick-theme.css);
+@import url(../../css/fonts.css);
+@import url(../../css/base.css);
+@import url(../../css/header.css);
+@import url(../../css/navbar.css);
+@import url(../../css/footer.css);
+@import url(../../css/pop-up.css);
+.gallery-desc {
+  padding: 100px 0;
+}
+
+.gallery-desc .portfolio-heading-menu .block-heading h2 {
+  line-height: 51px;
+  font-size: 35px;
+  letter-spacing: 0.01em;
+  padding-bottom: 20px;
+}
+
+.gallery-desc .portfolio-heading-menu .block-heading p {
+  width: 774px;
+  padding-top: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .gallery-desc .portfolio-heading-menu .block-heading__decor, .gallery-desc .portfolio-heading-menu .block-heading-text p {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .gallery-desc .portfolio-heading-menu .block-heading__decor {
+    display: none !important;
+  }
+  .gallery-desc .portfolio-heading-menu .block-heading p {
+    padding-top: 0 !important;
+  }
+  .gallery-desc .portfolio-heading-menu .block-heading h2 {
+    font-size: 30px;
+  }
+}
+
+.gallery-desc .portfolio-heading-menu .portfolio-heading-menu__wrapper-menu {
+  padding: 0 400px;
+}
+
+.gallery-desc .portfolio-heading-menu .portfolio-heading-menu__wrapper-menu span {
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.gallery-desc .portfolio-heading-menu .portfolio-heading-menu__wrapper-menu span:hover {
+  border-bottom: 2px solid #e4be7f;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-desc .portfolio-heading-menu__wrapper-menu {
+    padding: 0 200px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-desc .portfolio-heading-menu__wrapper-menu {
+    padding: 0 100px !important;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .gallery-desc .portfolio-heading-menu__wrapper-menu {
+    padding: 0 0 !important;
+  }
+}
+
+.gallery-desc .gallery-desc__images {
+  padding-top: 70px;
+}
+
+.gallery-desc .gallery-desc__images .gallery-desc__image {
+  width: 280px;
+  height: 380px;
+  margin-bottom: 20px;
+}
+
+.gallery-desc .load-more {
+  padding-top: 50px;
+}
+
+.gallery-desc .load-more a {
+  background: transparent;
+  padding: 10px;
+  color: #333;
+  border: 1px solid #333;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  text-decoration: none;
+}
+
+.gallery-desc .load-more a:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .gallery-desc .gallery-desc__images .gallery-desc__image {
+    -webkit-flex-basis: 345px;
+        -ms-flex-preferred-size: 345px;
+            flex-basis: 345px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .gallery-desc .gallery-desc__images {
+    display: block;
+  }
+  .gallery-desc .gallery-desc__images .gallery-desc__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-desc {
+    padding: 40px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-desc .portfolio-heading-menu__wrapper-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gallery-desc .portfolio-heading-menu__wrapper-menu .portfolio-heading-menu__item {
+    margin-bottom: 10px;
+  }
+}

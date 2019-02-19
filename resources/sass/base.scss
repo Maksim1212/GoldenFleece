@@ -1,0 +1,81 @@
+body {
+	font-family: 'Roboto Slab', sans-serif;
+    color: #333;
+    line-height: 1.75;
+}
+
+.container {
+	width: 1190px;
+    margin: 0 auto;
+}
+
+.upper { text-transform: uppercase; }
+
+.capitalize { text-transform: capitalize; }
+
+.italic { font-style: italic; }
+
+.light { font-weight: 300; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.relative { position: relative; }
+
+.absolute { position: absolute; }
+
+.fixed { position: fixed; }
+
+.d-block { display: block; }
+
+.d-flex { display: flex; }
+
+.d-grid { display: grid; }
+
+.d-none { display: none; }
+
+.m-auto { margin: 0 auto; }
+
+.w-100 { width: 100%; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.justify-content-center { justify-content: center; }
+
+.justify-content-around { justify-content: space-around; }
+
+.justify-content-between { justify-content: space-between; }
+
+.align-items-center { align-items: center; }
+
+.justify-content-start { justify-content: flex-start; }
+
+.justify-content-end { justify-content: flex-end; }
+
+.align-items-start { align-items: flex-start; }
+
+.align-items-end { align-items: flex-end; }
+
+.flex-column { flex-direction: column; }
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+div, a, span, input, textarea, button { box-sizing: border-box; }
+
+input, textarea, button { outline: none; }
+
+h1, h2, h3, h4, p, span {
+    cursor: default;
+    margin: 0;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}

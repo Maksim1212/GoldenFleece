@@ -1,0 +1,177 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/navbar.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+.feedback-pop-up {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, .65);
+    padding: 100px 0;
+
+    .feedback-pop-up__inner {
+        background: #fff;
+        padding: 20px 40px;
+
+        .feedback-pop-up__close {
+            top: 10px;
+            right: 15px;
+            opacity: .65;
+
+            &:hover { opacity: 1; }
+
+            i { cursor: pointer; }
+        }
+
+        .feedback-pop-up__heading {
+            h3 {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .feedback-pop-up__fromset-block {
+            margin-bottom: 20px;
+
+            input[type="text"] {
+                padding: 7px 15px;
+                border: 1px solid silver;
+                outline: none;
+                width: 100%;
+            }
+
+            span {
+                font-size: 14px;
+                margin-bottom: 5px;
+                opacity: .8;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 7px 15px;
+                border: 1px solid silver;
+                height: 100px;
+            }
+
+            select {
+                background: #fff;
+                border: 1px solid $accent;
+                outline: none;
+            }
+        }
+
+        .feedback-pop-up__fromset-block-buttonset {
+            padding-top: 30px;
+            button {
+                @include nav_button();
+                border: none;
+                cursor: pointer;
+                background: $text;
+                color: #fff;
+                &:hover { background: darken($text, 10%); }
+            }
+        }
+
+        .feedback-hint-text {
+            @include hint();
+            padding-top: 20px;
+        }
+    }
+}
+
+.feedback-desc {
+    padding: $section_padding 0;
+
+    @include block_heading();
+
+    .feedback-desc__add {
+        padding-top: 50px;
+        span {
+            @include nav_button();
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            background: $text;
+            color: #fafafa;
+
+            &:hover { background: darken($text, 10%); }
+        }
+    }
+
+    .feedback-desc__feedbacks {
+        padding-top: 50px;
+
+        .feedback-desc__feedback {
+            background: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            transition: $smooth;
+            margin-bottom: 40px;
+
+            &:last-child { margin-bottom: 0; }
+
+            &:hover { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); }
+
+            .feedback-desc__feedback-heading {
+                h3 { font-size: 30px; margin-bottom: 20px; }
+            }
+
+            .feedback-desc__feedback-user {
+                .feedback-desc__feedback-user-pic {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+
+                .feedback-desc__user-name {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                .feedback-desc__user-time {
+                    color: $accent;
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .feedback-desc__feedback-rate {
+                .feedback-desc__feedback-rate-item {
+                    margin-bottom: 5px;
+
+                    span {
+                        font-family: 'Arial', sans-serif;
+                        font-size: 15px;
+                        opacity: .8;
+                    }
+
+                    .feedback-desc__feedback-rate-stars-filled {
+                        color: $accent;
+                        padding-right: 4px;
+                    }
+
+                    &:last-child { margin-bottom: 0; }
+                }
+            }
+        }
+    }
+}
+
+@import "feedback-media";

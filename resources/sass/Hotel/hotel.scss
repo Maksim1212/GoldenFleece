@@ -1,0 +1,165 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/navbar.css";
+@import "../../css/footer.css";
+
+.hotel-desc {
+    padding: $section_padding 0;
+    @include article_heading();
+}
+
+/* Reserve hotel Section */
+
+.reserve-hotel {
+    height: 320px;
+    margin-bottom: 150px;
+
+    .reserve-hotel__inner {
+        padding: 50px 55px;
+        background: #fff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+        bottom: -150px;
+
+        .reserve-hotel__inner-row:last-child { padding-top: 20px; }
+
+        .reserve-hotel__inner-heading {
+            padding-bottom: 20px;
+
+            h2 {
+                font-size: 32px;
+                letter-spacing: 0.01em;
+            }
+        }
+
+        .reserve-hotel__inner-block {
+            margin-right: 16px;
+
+            &:last-child { margin-right: 0; }
+
+            label {
+                font-size: 14px;
+                opacity: .7;
+                margin-bottom: 5px;
+            }
+
+            .reserve-hotel__date-input {
+                padding: 5px 10px;
+                border: 1px solid silver;
+                transition: $smooth;
+                background: #fff;
+
+                &:focus { border: 1px solid $accent; }
+
+                &::-webkit-calendar-picker-indicator {
+                    color: rgba(0, 0, 0, 0);
+                    opacity: 1;
+                    display: block;
+                    background: url(../../../img/Hotel/calendar.png) no-repeat center;
+                    width: 10px;
+                    height: 12px;
+                    border-width: thin;
+                }
+            }
+
+            select {
+                padding: 5.5px 10px;
+                border: 1px solid silver;
+                background: transparent;
+                outline: none;
+                transition: $smooth;
+                background: #fff;
+
+                &:focus { border: 1px solid $accent; }
+            }
+
+            .reserve-hotel__input {
+                padding: 8px 10px;
+                border: 1px solid silver;
+                background: transparent;
+                outline: none;
+                transition: $smooth;
+
+                &:focus { border: 1px solid $accent; }
+            }
+
+            @include counter();
+
+            button {
+                @include nav_button();
+                border: none;
+                padding: 7.5px 104px;
+                cursor: pointer;
+                font-size: 18.5px;
+                background: $text;
+                color: #fafafa;
+
+                &:hover { background: darken($text, 10%); }
+            }
+        }
+
+        .reserve-hotel__inner-footer {
+            @include hint();
+            padding-top: 50px;
+        }
+    }
+}
+
+/* Hotel types Section */
+
+.hotel-types {
+    padding: $section_padding 0;
+    @include block_heading();
+
+    @include slider();
+
+    .hotel__carousel-undertitle {
+        font-size: 19px;
+        opacity: .95;
+    }
+
+    .hotel__carousel-undertitle-hover {
+        color: $text;
+        margin-top: -30px;
+        opacity: .95;
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        .carousel__item {
+            .carousel__item-inner-hover {
+                .carousel__item-inner-block {
+                    a:last-child {
+                        &:hover {
+                            background: rgba(255, 255, 255, .2) !important;
+                            color: $text !important;
+                            border: 1px solid $text !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Hotel Feedback Section */
+
+.hotel-feedback {
+    padding-bottom: $section_padding;
+
+    @include block_heading();
+    @include feedback();
+}
+
+@import "hotel-media";

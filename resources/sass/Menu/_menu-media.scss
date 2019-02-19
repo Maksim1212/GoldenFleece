@@ -1,0 +1,25 @@
+@import "../vars";
+
+@media only screen and (max-width : 1200px) { .container { width: 90%; } }
+
+@media only screen and (max-width : 992px) {
+	/**/
+}
+
+@media only screen and (max-width : 768px) {
+	/**/
+}
+
+@media only screen and (max-width : 480px) {
+    .menu-desc {
+        padding: $section_responsive_padding 0;
+
+        .menu-desc__buttonset { hr { margin-top: 50px; width: 100%; } }
+    }
+
+    .menu-preview { padding-bottom: $section_responsive_padding; }
+}
+
+@media only screen and (max-width : 320px) {
+	/**/
+}

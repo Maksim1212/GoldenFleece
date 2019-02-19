@@ -1,0 +1,265 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+@import "../../libs/jquery_ui/jquery-ui.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/delivery-navbar.css";
+@import "../../css/offer.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+.delivery-pop-up {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+    .delivery-pop-up__inner {
+        background: #fff;
+        width: 550px;
+
+        .delivery-pop-up__carousel {
+            margin-bottom: 0;
+
+            .delivery-pop-up__carousel-slide {
+                width: 100%;
+                height: 200px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, .5);
+                }
+            }
+
+            .slick-prev {
+                left: 10px;
+                top: 100px;
+                z-index: 666;
+            }
+
+            .slick-next {
+                right: 10px;
+                top: 100px;
+                z-index: 666;
+            }
+
+            .slick-dots {
+                top: 165px;
+                height: 30px;
+            }
+
+            .slick-dots li button:before {
+                width: 12px;
+                height: 12px;
+                content: '';
+                color: #fff;
+                background: #fff;
+                border-radius: 50%;
+                opacity: .7;
+            }
+
+            .slick-dots li.slick-active button:before {
+                opacity: 1;
+                color: #fff;
+            }
+        }
+
+        .delivery-pop-up__close {
+            right: 20px;
+            top: 5px;
+            font-size: 20px;
+            color: #fafafa;
+            opacity: .8;
+            cursor: pointer;
+            z-index: 77;
+
+            &:hover { opacity: 1; }
+        }
+
+        .delivery-pop-up__inner-heading {
+            height: 200px;
+            width: 100%;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(0, 0, 0, .3);
+            }
+        }
+
+        .delivery-pop-up__inner-text-heading {
+            h3 { font-size: 30px; }
+        }
+
+        .delivery-pop-up__inner-text-cost {
+            font-weight: 300;
+            padding: 0 100px;
+            padding-bottom: 20px;
+
+            b { font-weight: 600; }
+        }
+
+        .delivery-pop-up__inner-wrap { padding: 40px 20px; }
+
+        .delivery-pop-up__inner-text-text {
+            font-size: 14px;
+            opacity: .6;
+        }
+
+        .delivery-pop-up__footer {
+            padding-top: 40px;
+            @include counter();
+
+            .counter__label {
+                opacity: .6;
+                padding-bottom: 5px;
+            }
+
+            .food-count {
+                font-size: 30px;
+                font-weight: 600;
+                padding: 0 10px;
+            }
+
+            .delivery-pop-up__buttonset {
+                padding-bottom: 10px;
+                a {
+                    @include nav_button();
+                    text-decoration: none;
+                    padding: 7px 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.delivery-offer {
+    .offer__slide-footer {
+        padding-top: 80px;
+    }
+}
+
+.delivery-gallery {
+    @include block_heading();
+    padding: $section_padding 0;
+
+    .delivery-gallery__carousel-wrap { padding-top: 50px; }
+
+    @include full_slider();
+}
+
+.delivery-catalog {
+    @include block_heading();
+    @include catalog_mobile_menu();
+
+    .delivery-catalog__wrapper {
+        padding-bottom: 100px;
+    }
+
+    .delivery-catalog__sort {
+        padding-top: 50px;
+
+        .delivery-catalog__sort-block {
+            .delivery-catalog__sort-title {
+                font-size: 14px;
+                padding-right: 10px;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .delivery-catalog__sort-select {
+                font-size: 16px;
+                font-family: 'Arial', sans-serif;
+                border: 1px solid silver;
+                z-index: 666;
+                cursor: pointer;
+                width: 200px;
+
+                &:hover {
+                    border: 1px solid $accent;
+
+                    .delivery-catalog__sort-select-title {
+                        .delivery-catalog__sort-select-arrow {
+                            border-left: 1px solid $accent;
+                            color: $accent;
+                        }
+
+                        span { color: $accent; }
+                    }
+                }
+
+                .delivery-catalog__sort-select-title {
+                    .delivery-catalog__sort-select-arrow {
+                        border-left: 1px solid silver;
+                        padding: 5px;
+                    }
+
+                    span {
+                        padding: 5px 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .delivery-catalog__sort-select-options-wrap {
+                    top: 39px;
+                    left: -1px;
+                    width: 100%;
+
+                    .delivery-catalog__sort-select-options {
+                        background: #fff;
+                        width: 100%;
+                        border-bottom: 1px solid silver;
+                        border-right: 1px solid silver;
+                        border-left: 1px solid silver;
+
+                        &:hover {
+                            border-bottom: 1px solid $accent;
+                            border-right: 1px solid $accent;
+                            border-left: 1px solid $accent;
+                        }
+
+                        .delivery-catalog__sort-select-option {
+                            padding: 5px 10px;
+                            display: block;
+                            text-decoration: none;
+                            color: $text;
+
+                            &:hover {
+                                background: $accent;
+                                color: #fafafa;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include catalog();
+    @include load_more();
+}
+
+@import "delivery-media";

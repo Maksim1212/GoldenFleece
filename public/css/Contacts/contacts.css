@@ -1,0 +1,194 @@
+/* Navbar button with accent background */
+/* Section block heading */
+/* Section block heading with article */
+/* Hint text */
+/* Slider */
+/* Full Width Slider */
+/* Counter */
+/* Catalog Items */
+/* Catalog Menu */
+/* Catalog Price */
+/* Catalog MObile Menu */
+/* Catalog Items Mobile */
+/* Catalog */
+/* News Items */
+@import url(../../libs/normalize/normalize.css);
+@import url(../../libs/slick/slick.css);
+@import url(../../libs/slick/slick-theme.css);
+@import url(../../libs/jquery_ui/jquery-ui.css);
+@import url(../../css/fonts.css);
+@import url(../../css/base.css);
+@import url(../../css/header.css);
+@import url(../../css/delivery-navbar.css);
+@import url(../../css/footer.css);
+@import url(../../css/pop-up.css);
+.contacts-desc {
+  padding: 100px 0;
+}
+
+.contacts-desc .block-heading h2 {
+  line-height: 51px;
+  font-size: 35px;
+  letter-spacing: 0.01em;
+  padding-bottom: 20px;
+}
+
+.contacts-desc .block-heading p {
+  width: 774px;
+  padding-top: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contacts-desc .block-heading__decor, .contacts-desc .block-heading-text p {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .contacts-desc .block-heading__decor {
+    display: none !important;
+  }
+  .contacts-desc .block-heading p {
+    padding-top: 0 !important;
+  }
+  .contacts-desc .block-heading h2 {
+    font-size: 30px;
+  }
+}
+
+.contacts-desc .contacts-desc__contacts {
+  padding-top: 50px;
+}
+
+.contacts-desc .contacts-desc__contacts .contacts-desc__contacts-block-contact i {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #e4be7f;
+}
+
+.contacts-desc .contacts-desc__contacts .contacts-desc__contacts-block-contact span {
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  margin: 10px 0;
+}
+
+.contacts-desc .contacts-desc__contacts hr {
+  width: 745px;
+  height: 1px;
+  background: #333;
+  opacity: .3;
+  margin: 30px auto;
+  border: none;
+}
+
+.contacts-desc .contacts-desc__contacts .contacts-desc__contacts-socials-block {
+  width: 150px;
+  padding-top: 40px;
+}
+
+.contacts-desc .contacts-desc__contacts .contacts-desc__contacts-socials-block i {
+  font-size: 20px;
+  color: #e4be7f;
+}
+
+.contacts-map {
+  padding-bottom: 100px;
+}
+
+.contacts-map #map {
+  height: 600px;
+}
+
+.contacts-feedback {
+  padding-bottom: 100px;
+}
+
+.contacts-feedback .feedback {
+  border: 1px solid silver;
+  padding: 10px;
+}
+
+.contacts-feedback .feedback .block-heading h2:last-child {
+  opacity: .65;
+  margin-bottom: 50px;
+}
+
+.contacts-feedback .feedback .feedback__inner {
+  border: 1px solid silver;
+  padding: 50px;
+}
+
+.contacts-feedback .feedback .feedback__inner .feedback__formset input {
+  width: 70%;
+  margin-bottom: 20px;
+  border: 1px solid #dadada;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.contacts-feedback .feedback .feedback__inner .feedback__formset button {
+  background: transparent;
+  padding: 10px;
+  color: #333;
+  border: 1px solid #333;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  cursor: pointer;
+  border: none;
+  background: #333;
+  padding: 10px 30px;
+  color: #fafafa;
+}
+
+.contacts-feedback .feedback .feedback__inner .feedback__formset button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.contacts-feedback .feedback .feedback__inner .feedback__formset button:hover {
+  background: #1a1a1a;
+}
+
+.contacts-feedback .feedback .feedback__inner .feedback__footer {
+  opacity: .7;
+  font-size: 14px;
+  padding-top: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .contacts-feedback .feedback .feedback__inner .feedback__formset input {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts-feedback .feedback {
+    padding: 5px !important;
+  }
+  .contacts-feedback .feedback .block-heading h2 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  .contacts-feedback .feedback .feedback__inner {
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .contacts-desc .contacts-desc__contacts hr {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-desc {
+    padding: 40px 0;
+  }
+  .contacts-map #map {
+    height: 400px;
+  }
+}

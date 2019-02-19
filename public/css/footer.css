@@ -1,0 +1,123 @@
+/* Navbar button with accent background */
+/* Section block heading */
+/* Section block heading with article */
+/* Hint text */
+/* Slider */
+/* Full Width Slider */
+/* Counter */
+/* Catalog Items */
+/* Catalog Menu */
+/* Catalog Price */
+/* Catalog MObile Menu */
+/* Catalog Items Mobile */
+/* Catalog */
+/* News Items */
+/* Footer Section */
+.footer {
+  padding: 50px 0;
+  background: #373D44;
+  color: #fafafa;
+}
+
+.footer .footer__item:last-child, .footer .footer__item:first-child {
+  width: 30%;
+}
+
+.footer .footer__item-list {
+  margin-bottom: 20px;
+}
+
+.footer .footer__item-list:last-child {
+  margin-bottom: 0;
+}
+
+.footer .footer__item-list .footer__item-list-title {
+  line-height: 25px;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+
+.footer .footer__item-list .footer__item-list-links a {
+  color: #fafafa;
+  opacity: .8;
+  font-size: 14px;
+}
+
+.footer .footer__item-list .footer__socials a {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.footer .footer__item-show-on-map a {
+  color: #fafafa;
+  font-size: 15px;
+  margin-top: 20px;
+  display: block;
+}
+
+.footer .footer__adresses-numbers {
+  opacity: 0.8;
+}
+
+.footer .footer__item-phones {
+  margin-bottom: 10px;
+}
+
+.footer .footer__item-phones:last-child {
+  margin-bottom: 0;
+}
+
+.footer .footer__item-phones ul li {
+  cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__item-list .footer__item-list-title {
+    font-size: 14px;
+  }
+  .footer .footer__item-list .footer__item-list-links a {
+    font-size: 13px;
+  }
+  .footer .footer__item-list .footer__socials a {
+    font-size: 15px;
+  }
+  .footer .footer__item-show-on-map a {
+    font-size: 13px;
+  }
+  .footer .footer__adresses-numbers {
+    font-size: 13px;
+  }
+  .footer .footer__item-phones {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .footer {
+    position: relative;
+    padding-top: 220px;
+  }
+  .footer .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer__item:last-child, .footer .footer__item:first-child {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer__logo-item {
+    position: absolute;
+    width: 90%;
+    top: 30px;
+  }
+  .footer .footer__item:first-child {
+    margin-bottom: 40px;
+  }
+}

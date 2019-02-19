@@ -1,0 +1,171 @@
+@import "../vars";
+@import "../mixins";
+
+//libs
+@import "../../libs/normalize/normalize.css";
+@import "../../libs/slick/slick.css";
+@import "../../libs/slick/slick-theme.css";
+
+//specifications
+@import "../../css/fonts.css";
+@import "../../css/base.css";
+
+//templates
+@import "../../css/header.css";
+@import "../../css/navbar.css";
+@import "../../css/offer.css";
+@import "../../css/footer.css";
+@import "../../css/pop-up.css";
+
+/* About Section */
+
+.about {
+    background: #fff;
+    padding: $section_padding 0;
+
+    @include block_heading();
+
+    .about__items {
+        padding-top: 100px;
+
+        .about__item {
+            background: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+            padding: 50px 30px;
+            transition: $smooth;
+            flex-basis: 380px;
+
+            &:hover {
+                box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+            }
+
+            .about__item-icon img {
+                height: 50px;
+            }
+
+            .about__item-title {
+                h3 {
+                    line-height: 38px;
+                    font-size: 24px;
+                    padding: 20px 0;
+                    color: #000;
+                    letter-spacing: 0.01em;
+                }
+            }
+
+            .about__item-text {
+                p {
+                    width: 315px;
+                    margin: 0 auto;
+                    padding-bottom: 50px;
+                }
+            }
+
+            .about__item-button {
+                a {
+                    width: 90%;
+                    margin: 0 auto;
+                    background: $accent;
+                    display: block;
+                    color: #fafafa;
+                    text-decoration: none;
+                    font-weight: 300;
+                    transition: $smooth;
+
+                    @include nav_button();
+                    padding: 5px 10px;
+                    border: 1px solid #777;
+
+                    &:hover { background: #333; }
+                }
+            }
+        }
+    }
+}
+
+/* About Info Section */
+
+.about-info {
+    padding: 300px 0;
+
+    .about-info__inner {
+        width: 500px;
+
+        h3 {
+            line-height: 51px;
+            font-size: 32px;
+            letter-spacing: 0.01em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 33px;
+            font-size: 18px;
+            letter-spacing: 0.01em;
+            opacity: .8;
+            margin-bottom: 40px;
+        }
+
+        a {
+            @include nav_button();
+            text-decoration: none;
+            color: #fafafa;
+            background: #333;
+
+            &:hover {
+                background: transparent;
+                color: $text;
+                border: 1px solid $text;
+            }
+        }
+    }
+}
+
+/* News Section */
+
+.news {
+    padding: $section_padding 0;
+
+    @include block_heading();
+    @include news_items();
+}
+
+/* Feedback Section */
+
+.feedback {
+    padding: $section_padding + 150 0;
+
+    .feedback__inner {
+        .feedback__inner-block {
+            line-height: 51px;
+            font-size: 32px;
+            letter-spacing: 0.01em;
+        }
+
+        .feedback__formset {
+            padding-top: 40px;
+
+            input {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+                padding: 15px 20px 15px 25px;
+                border: none;
+                outline: none;
+                width: 570px;
+            }
+
+            button {
+                @include nav_button();
+                border: none;
+                cursor: pointer;
+                padding: 0 20px;
+                background: $text;
+                color: #fafafa;
+
+                &:hover { background: darken($text, 10%); }
+            }
+        }
+    }
+}
+
+@import "media"; // Always in the end

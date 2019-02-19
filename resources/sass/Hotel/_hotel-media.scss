@@ -1,0 +1,103 @@
+@import "../vars";
+
+@media only screen and (max-width : 1200px) {
+	.container { width: 90%; }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.reserve-hotel {
+        background: #fff !important;
+
+        .reserve-hotel__inner {
+            box-shadow: none;
+            top: -10px;
+            width: 100%;
+
+            .reserve-hotel__inner-row {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .reserve-hotel__inner-block {
+                margin-right: 0;
+                margin: 0 auto 20px auto;
+                text-align: center;
+                width: 100%;
+
+                .reserve-hotel__date-input {
+                    width: 100%;
+                }
+
+                select {
+                    padding: 5.5px 10px;
+                    border: 1px solid silver;
+                    background: transparent;
+                    outline: none;
+                    transition: $smooth;
+                    width: 100%;
+
+                    &:focus { border: 1px solid $accent; }
+                }
+
+                .reserve-hotel__input {
+                    padding: 8px 10px;
+                    border: 1px solid silver;
+                    background: transparent;
+                    outline: none;
+                    transition: $smooth;
+                    width: 100%;
+
+                    &:focus { border: 1px solid $accent; }
+                }
+
+                button {
+                    margin: 30px 0 0 0;
+                    width: 100%;
+                }
+            }
+
+            .reserve-hotel__inner-footer { padding-top: 20px; }
+        }
+    }
+
+    .hotel-types { padding-top: $section_padding + 300; }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .hotel-desc { padding: $section_responsive_padding 0; }
+
+    .reserve-hotel {
+        .reserve-hotel__inner {
+            .reserve-hotel__inner-block {
+                button {
+                    padding: 10px 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .reserve-hotel {
+        .reserve-hotel__inner {
+            padding: 10px 45px;
+            bottom: -150px;
+
+            .reserve-hotel__inner-row:last-child { padding-top: 20px; }
+
+            .reserve-hotel__inner-heading {
+                padding-bottom: 20px;
+
+                h2 {
+                    font-size: 25px;
+                    letter-spacing: 0.01em;
+                }
+            }
+        }
+    }
+
+    .hotel__carousel-undertitle-hover { font-size: 15px !important; }
+}
